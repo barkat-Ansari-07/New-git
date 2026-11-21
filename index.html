@@ -39,6 +39,327 @@
         nav ul li a:hover {
             color: #38bdf8;
         }
+        
+footer {
+    background-color: #111827;
+    color: white;
+    padding-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 20px 50px 40px;
+}
+
+.footer-box {
+    width: 25%;
+}
+
+.footer-box h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.footer-box h3 {
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+
+.footer-box p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 12px;
+}
+
+.footer-box ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+    color: #38bdf8;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #374151;
+    text-align: center;
+    padding: 18px;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* FOOTER SECTION */
+footer {
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #ffffff;
+    padding-top: 60px;
+    font-family: Arial, sans-serif;
+}
+
+/* FOOTER CONTAINER */
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* FOOTER COLUMNS */
+.footer-box {
+    flex: 1;
+}
+
+/* LOGO / TITLE */
+.footer-box h2 {
+    font-size: 28px;
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+/* HEADING */
+.footer-box h3 {
+    font-size: 19px;
+    margin-bottom: 22px;
+    position: relative;
+}
+
+/* HEADING UNDERLINE */
+.footer-box h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 3px;
+    background: #38bdf8;
+    border-radius: 10px;
+}
+
+/* PARAGRAPH */
+.footer-box p {
+    color: #cbd5e1;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+/* LIST */
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* LIST ITEMS */
+.footer-box ul li {
+    margin-bottom: 14px;
+}
+
+/* LINKS */
+.footer-box ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.footer-box ul li a:hover {
+    color: #38bdf8;
+    padding-left: 8px;
+}
+
+/* CONTACT */
+.footer-box p:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+/* BOTTOM FOOTER */
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.12);
+    text-align: center;
+    padding: 22px 15px;
+    background: rgba(0,0,0,0.2);
+}
+
+/* COPYRIGHT */
+.footer-bottom p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .footer-box {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        padding: 0 25px 30px;
+        gap: 30px;
+    }
+
+    .footer-box {
+        width: 100%;
+        flex: 1;
+    }
+
+    footer {
+        padding-top: 40px;
+    }
+}
+
+/* SERVICES SECTION */
+.services-section {
+    padding: 80px 8%;
+    background-color: #f8fafc;
+    font-family: Arial, sans-serif;
+}
+
+/* SECTION HEADING */
+.services-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.subtitle {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.services-heading h2 {
+    font-size: 38px;
+    color: #0f172a;
+    margin: 15px 0;
+}
+
+.services-heading p {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* CARDS CONTAINER */
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* SERVICE CARD */
+.service-card {
+    background: white;
+    width: 320px;
+    padding: 35px 28px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+    transition: 0.4s ease;
+    border: 1px solid #e2e8f0;
+}
+
+/* CARD HOVER */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.15);
+    border-color: #2563eb;
+}
+
+/* ICON */
+.service-icon {
+    width: 65px;
+    height: 65px;
+    background: #eff6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* CARD TITLE */
+.service-card h3 {
+    font-size: 22px;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+/* CARD DESCRIPTION */
+.service-card p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* CARD LINK */
+.service-card a {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.service-card a:hover {
+    color: #0f172a;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    .services-section {
+        padding: 55px 20px;
+    }
+
+    .services-heading h2 {
+        font-size: 30px;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -55,6 +376,101 @@
         </ul>
     </nav>
 
-<img src="ba.jpg" width="100%" height="100%" style="border: 2px solid black;">
+<img src="ba.jpg" width="100%" height="100%">
+<section class="services-section">
+
+    <div class="services-heading">
+        <span class="subtitle">WHAT WE OFFER</span>
+        <h2>Explore Our Services</h2>
+        <p>
+            Discover our professional services designed to help
+            you learn, grow and achieve your goals.
+        </p>
+    </div>
+
+    <div class="services-container">
+
+        <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>
+                We create modern, responsive and user-friendly
+                websites using the latest web technologies.
+            </p>
+            <a href="#">Learn More →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📈</div>
+            <h3>Digital Marketing</h3>
+            <p>
+                Grow your business online with digital marketing,
+                SEO, social media and advertising strategies.
+            </p>
+            <a href="#">Learn More →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3>Graphic Design</h3>
+            <p>
+                Create attractive graphics, creative designs and
+                professional branding for your business.
+            </p>
+            <a href="#">Learn More →</a>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <div class="footer-container">
+
+        <!-- About -->
+        <div class="footer-box">
+            <h2>MyWebsite</h2>
+            <p>
+                We provide quality services and help students
+                learn new skills to build their bright future.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-box">
+            <h3>Our Services</h3>
+            <ul>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+                <li><a href="#">SEO</a></li>
+                <li><a href="#">Graphic Design</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+            <p>Email: info@mywebsite.com</p>
+            <p>Phone: +91 9876543210</p>
+            <p>Location: Gorakhpur, India</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 MyWebsite. All Rights Reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
